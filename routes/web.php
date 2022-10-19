@@ -26,3 +26,8 @@ Route::get('/services', function () {
     return view('services');
 })->name('services');
 
+// legal
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy-policy');
+
