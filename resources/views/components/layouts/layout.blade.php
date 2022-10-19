@@ -12,8 +12,12 @@
 
     {{-- livewire --}}
     @livewireStyles
+
+    <x-core.dark-mode-toggler-script />
 </head>
 <body class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900">
+
+    <x-sections.navbar />
 
     {{ $slot }}
 
