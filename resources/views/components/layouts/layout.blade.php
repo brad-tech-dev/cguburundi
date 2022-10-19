@@ -13,7 +13,7 @@
     {{-- livewire --}}
     @livewireStyles
 </head>
-<body>
+<body class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900">
 
     {{ $slot }}
 
