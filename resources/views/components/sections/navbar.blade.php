@@ -5,6 +5,7 @@
         'about-us' => ['/about-us', 'Qui sommes-nous'],
         'services' => ['/services', 'Nos services'],
         'events' => ['/events', 'Communauté/Événements'],
+        'blog' => ['/blog', 'Blog'],
         'contacts' => ['/contacts', 'Contacts'],
     ];
 
