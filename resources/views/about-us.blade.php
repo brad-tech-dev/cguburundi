@@ -21,4 +21,34 @@
         </div>
     </section>
 
+
+    <section class="bg-white dark:bg-gray-900">
+    <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+        <div class="flex flex-col lg:flex-row justify-between gap-8">
+            <div class="w-full lg:w-5/12 flex flex-col justify-center">
+                <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">Mission</h1>
+                <p class="font-normal text-base leading-6 text-gray-600 dark:text-white">
+                    La mission de la CGU est de « rendre l’accès facile à ses services financiers et non financiers pour toutes les personnes physiques ou des associations à faibles revenus mais économiquement actives issues des milieux ruraux et urbains afin de promouvoir leurs conditions de vie ».
+                </p>
+            </div>
+            <div class="w-full lg:w-8/12">
+                <img class="w-full h-full" src="{{ asset('images/meeting.jpeg') }}" alt="A group of People" />
+            </div>
+        </div>
+
+        <div class="flex lg:flex-row flex-col justify-between gap-8 pt-12">
+            <div class="w-full lg:w-8/12">
+                <img class="w-full h-full" src="{{ asset('images/greeting.jpeg') }}" alt="A group of People" />
+            </div>
+            <div class="w-full lg:w-5/12 flex flex-col justify-center">
+                <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">Vision</h1>
+                <p class="font-normal text-base leading-6 text-gray-600 dark:text-white">
+                    Assurer un développement communautaire intégré de la personne humaine dans notre pays par l’offre des services financiers et non financiers de qualité répondant à ses besoins et ce, d’une façon abordable, rapide et fiable.
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
 </x-layouts.layout>
