@@ -1,14 +1,16 @@
 @php
 
+    // map the routes to their menu names
     $menus = [
-        'home' => ['/', 'Acceuil'],
-        'about-us' => ['/about-us', 'Qui sommes-nous'],
-        'services' => ['/services', 'Nos services'],
-        'events' => ['/events', 'Communauté/Événements'],
-        'blog' => ['/blog', 'Blog'],
-        'contacts' => ['/contacts', 'Contacts'],
+        'home' => 'Acceuil',
+        'about-us' => 'Qui sommes-nous',
+        'services' => 'Nos services',
+        'events' => 'Communauté/Événements',
+        'blog' => 'Blog',
+        'contacts' => 'Contacts',
     ];
 
+    // determine the page we're on
     $currentPage = Request::url();
 
 @endphp
@@ -39,14 +41,14 @@
                 class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
                 @foreach ($menus as $route => $menu)
-                <li>
-                    <a href={{ route($route) }} class={{ strcmp($currentPage, $menu[0]) == 0
-                        ? "block py-2 pr-4 pl-3 text-white bg-secondary-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                        : "block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-secondary-700"
-                        }}>
-                        {{$menu[1]}}
-                    </a>
-                </li>
+                    <li>
+                        <a href={{ route($route) }}
+                            class="{{ strcmp($currentPage, route($route)) == 0
+                                ? 'block py-2 pr-4 pl-3 text-white bg-secondary-700 rounded md:bg-transparent md:text-primary-700 md:p-0 dark:text-white'
+                                : 'block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-secondary-700' }}">
+                            {{ $menu }}
+                        </a>
+                    </li>
                 @endforeach
             </ul>
         </div>
