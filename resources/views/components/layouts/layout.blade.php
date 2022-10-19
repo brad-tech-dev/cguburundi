@@ -19,7 +19,11 @@
 
     <x-sections.navbar />
 
-    {{ $slot }}
+    <div class="py-10">
+        {{ $slot }}
+    </div>
+
+    <x-sections.footer />
 
     @livewireScripts
 </body>
