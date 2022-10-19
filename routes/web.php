@@ -6,6 +6,10 @@ Route::get('/about-us', function () {
     return view('about-us');
 })->name('about-us');
 
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
+
 Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
