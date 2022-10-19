@@ -14,9 +14,9 @@ Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
 
-Route::get('/events', function () {
-    return view('events');
-})->name('events');
+// Route::get('/events', function () {
+//     return view('events');
+// })->name('events');
 
 Route::get('/', function () {
     return view('home');

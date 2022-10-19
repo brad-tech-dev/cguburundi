@@ -5,7 +5,7 @@
         'home' => 'Acceuil',
         'about-us' => 'Qui sommes-nous',
         'services' => 'Nos services',
-        'events' => 'Communauté/Événements',
+        // 'events' => 'Communauté/Événements',
         'blog' => 'Blog',
         'contacts' => 'Contacts',
     ];
