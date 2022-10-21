@@ -16,7 +16,7 @@
             </div>
             <div class="grid grid-cols-2 gap-4 mt-8">
                 <img class="rounded-lg" src="{{ asset('images/burundi-flag-on-flagpole.jpg') }}" title="Photo par aboodi vesakaran: https://www.pexels.com/photo/burundi-national-flag-13913360/" alt="Burundi flag on flag pole">
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ asset('images/bikorimana-innocent.jpg') }}" alt="Bikorimana Innocent" title="Bikorimana Innocent" >
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ asset('images/mpoiu.jpeg') }}" alt="CGU Offices" title="Bikorimana Innocent" >
             </div>
         </div>
     </section>
