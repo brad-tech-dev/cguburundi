@@ -14,7 +14,7 @@
                     Le siège de la CGU est situé au chef-lieu de la commune et province Bubanza et sa gestion quotidienne se conforme aux principes coopératifs universellement reconnus tel que l'adhésion volontaire et ouverte à tous ; le pouvoir démocratique exercé par les coopérateurs ; la participation économique des coopérateurs ; l'autonomie et l'indépendance de la société coopérative ; l'éducation, la formation et l'information ; l'inter coopération ou coopération entre les coopératives ; le dévouement à la communauté.
                 </p>
             </div>
-            <div class="grid grid-cols-1 gap-4 mt-8">
+            <div class="grid grid-cols-2 gap-4 mt-8">
                 {{-- <img class="rounded-lg" src="{{ asset('images/burundi-flag-on-flagpole.jpg') }}" title="Photo par aboodi vesakaran: https://www.pexels.com/photo/burundi-national-flag-13913360/" alt="Burundi flag on flag pole"> --}}
                 <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ asset('images/mpoiu.jpg') }}" alt="CGU Offices" title="Bikorimana Innocent" >
             </div>
