@@ -32,13 +32,13 @@
                 </p>
             </div>
             <div class="w-full lg:w-8/12">
-                <img class="w-full h-full" src="{{ asset('images/meeting.jpeg') }}" alt="A group of People" />
+                <img class="w-full h-full" src="{{ asset('images/office-greeting.jpg') }}" alt="A handshake" />
             </div>
         </div>
 
         <div class="flex lg:flex-row flex-col justify-between gap-8 pt-12">
             <div class="w-full lg:w-8/12">
-                <img class="w-full h-full" src="{{ asset('images/greeting.jpeg') }}" alt="A group of People" />
+                <img class="w-full h-full" src="{{ asset('images/success.jpg') }}" alt="Success" />
             </div>
             <div class="w-full lg:w-5/12 flex flex-col justify-center">
                 <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">Vision</h1>
