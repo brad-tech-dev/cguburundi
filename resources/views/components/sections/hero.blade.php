@@ -1,5 +1,5 @@
 <section class="bg-white dark:bg-gray-900 bg-cover bg-center"
-style="background-image: url({{ asset('images/dancer.jpg') }});">
+style="background-image: url({{ asset('images/greeting.jpeg') }});">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 backdrop-contrast-100 backdrop-brightness-50">
 
         @livewire('announcement-badge', ['href' => route('blog'), 'title' => 'Nouveau', 'subject' => 'Nous avons une nouvelle publication'])
@@ -12,7 +12,7 @@ style="background-image: url({{ asset('images/dancer.jpg') }});">
             Le Succès est possible lorsque tout le monde est impliqué et il est meilleur lorsqu' il est partagé.
         </p>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-            <a href="#"
+            <a href="#cta"
                 class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                 Apprendre encore plus
                 <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
@@ -22,7 +22,7 @@ style="background-image: url({{ asset('images/dancer.jpg') }});">
                         clip-rule="evenodd"></path>
                 </svg>
             </a>
-            <a href="#"
+            {{-- <a href="#"
                 class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center rounded-lg border border-gray-300 hover:bg-gray-900 focus:ring-4 focus:ring-gray-100 text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                 <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@ style="background-image: url({{ asset('images/dancer.jpg') }});">
                     </path>
                 </svg>
                 Regarder la vidéo
-            </a>
+            </a> --}}
         </div>
 
         {{-- social media icons --}}
