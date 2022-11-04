@@ -2,7 +2,7 @@
 
     <x-sections.hero />
 
-    {{-- <x-sections.cta /> --}}
+    <x-sections.cta />
 
     @livewire('newsletter-signup')
 
