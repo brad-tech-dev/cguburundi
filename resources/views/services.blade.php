@@ -7,9 +7,9 @@
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                     Nos services reposent sur:
                 </h2>
-                <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+                {{-- <p class="text-gray-500 sm:text-xl dark:text-gray-400">
                     Chez CGU Burundi, nos services sont basés sur les valeurs suivantes.
-                </p>
+                </p> --}}
             </div>
             <div>
                 <ol class="relative border-l border-gray-200 dark:border-gray-700">
