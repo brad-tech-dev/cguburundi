@@ -44,10 +44,10 @@
                     </h2>
                     <ul class="text-gray-600 dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Politique de confidentialité</a>
+                            <a href="{{ route('privacy-policy') }}" class="hover:underline">Politique de confidentialité</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline">Termes et Conditions</a>
+                            <a href="{{ route('terms') }}" class="hover:underline">Termes et Conditions</a>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="{{ route('about-us') }}"
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="{{ route('home') }}"
                     class="hover:underline">CGU Burundi™</a>. Tous les droits sont réservés.
             </span>
             {{-- <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
