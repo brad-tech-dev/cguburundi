@@ -3,7 +3,7 @@
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="/" class="flex items-center">
-                    <img src="{{ asset('images/logo.png') }}" class="mr-3 h-8" alt="FlowBite Logo" />
+                    <img src="{{ asset('images/logo.png') }}" class="mr-3 h-8" alt="CGU Burundi Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CGU Burundi</span>
                 </a>
             </div>
@@ -55,7 +55,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com"
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="{{ route('about-us') }}"
                     class="hover:underline">CGU Burundi™</a>. Tous les droits sont réservés.
             </span>
             {{-- <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
