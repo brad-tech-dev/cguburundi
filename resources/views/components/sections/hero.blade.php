@@ -2,7 +2,7 @@
 style="background-image: url({{ asset('images/greeting.jpeg') }});">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 backdrop-contrast-100 backdrop-brightness-50">
 
-        @livewire('announcement-badge', ['href' => route('blog'), 'title' => 'Nouveau', 'subject' => 'Nous avons une nouvelle publication'])
+        @livewire('announcement-badge', ['href' => route('blog.index'), 'title' => 'Nouveau', 'subject' => 'Nous avons une nouvelle publication'])
 
         <h1
             class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
