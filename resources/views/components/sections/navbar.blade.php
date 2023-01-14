@@ -6,7 +6,7 @@
         'about-us' => 'Qui sommes-nous',
         'services' => 'Nos services',
         // 'events' => 'Communauté/Événements',
-        'blog' => 'Blog',
+        'blog.index' => 'Blog',
         'contacts' => 'Contacts',
     ];
 

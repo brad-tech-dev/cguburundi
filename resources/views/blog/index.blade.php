@@ -13,7 +13,7 @@
             </div>
             <div class="grid gap-8 lg:grid-cols-2">
 
-                <div role="status" class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 md:flex md:items-center">
+                {{-- <div role="status" class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 md:flex md:items-center">
                     <div
                         class="flex justify-center items-center w-full h-48 bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
                         <svg class="w-12 h-12 text-gray-200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
@@ -54,10 +54,62 @@
                         <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
                     </div>
                     <span class="sr-only">Loading...</span>
-                </div>
+                </div> --}}
 
-                {{--
-                <article
+                @foreach ($posts as $post)
+                    @php
+                        $lastModified = \Carbon\Carbon::createFromDate($post->modified);
+
+                        $author = $post->_embedded->author[0];
+
+                        // $author = $embedded->author[0];
+                        // $name = $author->name
+                        $avatar = ((array)$author->avatar_urls)["24"];
+
+                    @endphp
+                    <article
+                        class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <div class="flex justify-between items-center mb-5 text-gray-500">
+                            <span
+                                class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800 capitalize">
+                                <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z">
+                                    </path>
+                                </svg>
+                                {{ $post->type }}
+                            </span>
+                            <span class="text-sm">{{ $lastModified->diffForHumans() }}</span>
+                        </div>
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a
+                                href="{{ route('blog.post', ['slug' => $post->slug]) }}">{{ $post->title->rendered }}</a></h2>
+                        <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                            {{ strip_tags($post->excerpt->rendered) }}
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <img class="w-7 h-7 rounded-full"
+                                    src="{{ $avatar }}"
+                                    alt="{{ $author->name }} avatar" />
+                                <span class="font-medium dark:text-white capitalize">
+                                    {{ $author->name }}
+                                </span>
+                            </div>
+                            <a href="{{ route('blog.post', ['slug' => $post->slug]) }}"
+                                class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                                Lire la suite
+                                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                @endforeach
+                {{-- <article
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 animate-pulse">
                     <div class="flex justify-between items-center mb-5 text-gray-500">
                         <span
@@ -139,8 +191,8 @@
                             </svg>
                         </a>
                     </div>
-                </article>
-                --}}
+                </article> --}}
+
 
             </div>
         </div>
